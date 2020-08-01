@@ -8,14 +8,28 @@ import PageDefault from '../../../components/PageDefault';
 function Categoria() {
   return (
     <PageDefault>
-        <h1>Cadastrar Categoria</h1>
+      <h1>Cadastro de Categoria</h1>
 
-        <Link to="/">
-            Ir para home            
-        </Link>
-                
+      <form>
+
+        <label>
+          Nome da Categoria:
+          <input
+            type="text"
+          />
+        </label>
+
+        <button>
+          Cadastrar
+        </button>
+      </form>
+
+
+      <Link to="/">
+        Ir para home
+    </Link>
     </PageDefault>
-  );
+  )
 }
 
 export default Categoria;
