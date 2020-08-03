@@ -50,10 +50,10 @@ function CadastroCategoria() {
           value={values.nome}
           onChange={handleChange}
         />
-
+        
         <FormField
           label="Descrição:"
-          type="????"
+          type="text"
           name="descricao"
           value={values.descricao}
           onChange={handleChange}
@@ -71,11 +71,13 @@ function CadastroCategoria() {
         </div> */}
 
         <FormField
+        
           label="Cor"
           type="color"
           name="cor"
           value={values.cor}
           onChange={handleChange}
+        
         />
         {/* <div>
           <label>
@@ -89,7 +91,7 @@ function CadastroCategoria() {
           </label>
         </div> */}
 
-        <button>
+        <button className="ButtonLink">
           Cadastrar
         </button>
       </form>
@@ -105,7 +107,7 @@ function CadastroCategoria() {
         })}
       </ul>
 
-      <Link to="/">
+      <Link className="ButtonLink" to="/">
         Ir para home
       </Link>
     </PageDefault>

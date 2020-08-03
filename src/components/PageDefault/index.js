@@ -12,6 +12,7 @@ const Main = styled.main`
     padding-top: 10%;
     padding-left: 5%;
     padding-right: 5%;
+    
     background: linear-gradient( 115deg, #001669, #007296 1%, #007296 11%, #015673 15%, 
     #000 23.57%, transparent 23.57%, transparent 100% ),
 	
