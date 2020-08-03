@@ -107,7 +107,7 @@ function CadastroCategoria() {
       <button className="ButtonLink">
         Cadastrar
         </button>
-      <Link className="ButtonLink" to="/">
+      <Link as={Link} className="ButtonLink" to="/">
         Ir para home
       </Link>
     </PageDefault>
