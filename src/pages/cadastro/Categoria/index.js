@@ -91,9 +91,7 @@ function CadastroCategoria() {
           </label>
         </div> */}
 
-        <button className="ButtonLink">
-          Cadastrar
-        </button>
+        
       </form>
       
 
@@ -106,7 +104,9 @@ function CadastroCategoria() {
           )
         })}
       </ul>
-
+      <button className="ButtonLink">
+        Cadastrar
+        </button>
       <Link className="ButtonLink" to="/">
         Ir para home
       </Link>

@@ -1,38 +1,80 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FomField';
 
 
+  
+  
+
 
 function Video() {
+
+  const valoresIniciais = {
+    titulo: '',
+    linkVideo: '',
+    imgVideo: '',
+    categoria: '',
+    description: '',
+
+  }
+
+  const [videos, setVideos] = useState([]);
+  const [values, setValues] = useState(valoresIniciais);
+
+  function setValue(chave, valor) {
+    // chave: nome, descricao, bla, bli
+    setValues({
+      ...values,
+      [chave]: valor, // nome: 'valor'
+    })
+  }
+
+  function handleChange(infosDoEvento) {
+    setValue(
+      infosDoEvento.target.getAttribute('name'),
+      infosDoEvento.target.value
+    );
+  }
+
   return (
     <PageDefault>
         <h1>Cadastrar video</h1>
 
-      <form action="">
+      <form onSubmit={function handleSubmit(infosDoEvento) {
+          infosDoEvento.preventDefault();
+          setVideos([
+            ...videos,
+            values
+          ]);
+
+          setValues(valoresIniciais)
+      }}>
         <FormField
 
           label="Titulo"
           type="text"
           name="titulo"
-          value="Titulo"
+          value={values.titulo}
+          onChange={handleChange}
 
         />
         <FormField
 
           label="Link do video"
           type="url"
-          name="link"
-          value="http://"
+          name="linkVideo"
+          value={values.linkVideo}
+          onChange={handleChange}
 
         />
         <FormField
 
           label="Image do video"
           type="url"
-          name="image do video"
-          value="http://link-da-image-do-video"
+          name="imgVideo"
+          value={values.imgVideo}
+          onChange={handleChange}
 
         />
         <FormField
@@ -40,14 +82,16 @@ function Video() {
           label="Categoria"
           type="text"
           name="categoria"
-          value="Filmes"
+          value={values.categoria}
+          onChange={handleChange}
         />
         <FormField
 
           label="Descrição"
           type="text"
           name="description"
-          value="Descrição"
+          value={values.description}
+          onChange={handleChange}
 
         />
       </form>
