@@ -180,6 +180,40 @@
           "url": "https://www.youtube.com/watch?v=MwCx2qKdbDw&feature=youtu.be"
         }
       ]
+    },
+    {
+      "titulo": "Animes",
+      "cor": "#7b5be2",
+      "link_extra": {
+        "text": "Animes",
+        "url": "https://youtu.be/KybV-5Hvbow"
+      },
+      "videos": [
+        {
+          "titulo": "Avatar Ang vs Lord Ozai",
+          "url": "https://youtu.be/kXShLPXfWZA"
+        },
+        {
+          "titulo": "Naruto classic Rock lee vs Gaara da areia",
+          "url": "https://youtu.be/sjlqdtHsjK4"
+        },
+        {
+          "titulo": "Escanor vs Meliodas ",
+          "url": "https://youtu.be/khvju4ssoqo"
+        },
+        {
+          "titulo": "Abertura do anime cavaleiros do zodiaco",
+          "url": "https://youtu.be/WCV74ZtLx6I?list=PL-MZiM_3IYctHh_Lb1H6X1WDRpiwW1u8S"
+        },
+        {
+          "titulo": "Abertura do anime Yuyu Hakusho",
+          "url": "https://youtu.be/KJiEqtm--uw?list=PL-MZiM_3IYctHh_Lb1H6X1WDRpiwW1u8S"
+        },
+        {
+          "titulo": "Saitama vs Sonic",
+          "url": "https://youtu.be/LFHJ2TqvnFg"
+        }
+      ]
     }
   ]
 }
