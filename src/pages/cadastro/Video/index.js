@@ -99,7 +99,7 @@ function Video() {
         <button className="ButtonLink">
           Salvar
         </button>
-        <Link className="ButtonLink" to="/cadastro/categoria">
+        <Link as={Link}className="ButtonLink" to="/cadastro/categoria">
           Cadastrar Categoria
         </Link>
 
